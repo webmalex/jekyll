@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  kasper:
+    build: 
+      context: .
+    image: jekyll/jekyll
+    volumes:
+      - ./kasper:/srv/jekyll
+    # environment:
+    #   - NODE_ENV=production
+    ports:
+      - 4000:4000
+    command: jekyll s --incremental
+
+# volumes:
+#   npm:
