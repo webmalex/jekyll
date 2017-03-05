@@ -1,0 +1,3 @@
+[submodule "kasper"]
+	path = kasper
+	url = https://webmalex@github.com/webmalex/kasper.git
